@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Veil VPN</title>
+<meta name="description" content="Privacy Policy for Veil VPN, published by Thanh Mich LTD.">
+<style>
+:root{
+  --bg:#ffffff; --fg:#1a1a1f; --muted:#5b5b66; --card:#f6f6f9; --border:#e3e3ea;
+  --accent:#2f6bff; --link:#1f4fd8; --code-bg:#eef2ff; --warn-bg:#fff7ec; --warn-border:#f0c988; --warn-fg:#6b4a12;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121218; --fg:#eceef2; --muted:#a2a2b3; --card:#1b1b24; --border:#2c2c38;
+    --accent:#8aa8ff; --link:#a9bcff; --code-bg:#1c2438; --warn-bg:#2a2110; --warn-border:#7a5a1e; --warn-fg:#f0c988;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121218; --fg:#eceef2; --muted:#a2a2b3; --card:#1b1b24; --border:#2c2c38;
+  --accent:#8aa8ff; --link:#a9bcff; --code-bg:#1c2438; --warn-bg:#2a2110; --warn-border:#7a5a1e; --warn-fg:#f0c988;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+.wrap{max-width:46rem; margin:0 auto; padding:2.5rem 1.25rem 5rem}
+header.top{border-bottom:1px solid var(--border); padding:1.1rem 1.25rem}
+header.top .inner{max-width:46rem; margin:0 auto; display:flex; align-items:baseline; gap:.6rem; flex-wrap:wrap}
+header.top a.brand{font-weight:700; color:var(--fg); text-decoration:none; font-size:1.05rem}
+header.top nav{font-size:.9rem; color:var(--muted)}
+header.top nav a{color:var(--muted); text-decoration:none}
+header.top nav a:hover{color:var(--link)}
+h1{font-size:1.7rem; line-height:1.25; margin:.2rem 0 .3rem}
+h2{font-size:1.2rem; margin-top:2.1rem; padding-top:.2rem; border-top:1px solid var(--border)}
+h2:first-of-type{border-top:none; margin-top:1.6rem}
+h3{font-size:1rem; margin:1.4rem 0 .4rem}
+p, li{color:var(--fg)}
+.meta{color:var(--muted); font-size:.92rem; margin-bottom:1.6rem}
+a{color:var(--link)}
+strong{color:var(--fg)}
+code{background:var(--code-bg); padding:.1rem .35rem; border-radius:.3rem; font-size:.88em}
+.note{background:var(--warn-bg); border:1px solid var(--warn-border); color:var(--warn-fg); border-radius:.6rem; padding:.9rem 1.1rem; margin:1rem 0; font-size:.95rem}
+footer{color:var(--muted); font-size:.85rem; margin-top:3rem; padding-top:1.2rem; border-top:1px solid var(--border)}
+ul{padding-left:1.3rem}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="inner">
+    <a class="brand" href="../">Veil VPN — Legal</a>
+    <nav><a href="../privacy/">Privacy Policy</a> · <a href="../terms/">Terms of Use</a> · <a href="../refund/">Refund Policy</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Privacy Policy — Veil VPN</h1>
+<p class="meta"><strong>Effective date: September 9, 2026</strong></p>
+<p>Veil VPN ("the App") is developed by <strong>Thanh Mich LTD</strong> ("we", "us", "our"). This Privacy Policy
+explains what information the App collects, how it is used, and the choices you have. It applies to the
+Veil VPN Android application only.</p>
+<p>If you do not agree with this Policy, please do not use the App.</p>
+
+<h2>1. Overview</h2>
+<p>Veil VPN is a VPN (Virtual Private Network) tool. There is no sign-up, no login, and no user account or
+profile anywhere in the App — you can connect and use every core feature without giving us your name, email,
+or any identity information.</p>
+<p>Because Veil VPN's whole purpose is to route your internet traffic through a VPN server of your choosing,
+please read Section 2.1 carefully — it describes exactly what that means for your traffic and why we cannot
+make blanket "we never log anything" promises about servers we do not operate.</p>
+
+<h2>2. Information we collect</h2>
+
+<h3>2.1 Your VPN connection and traffic — how routing actually works</h3>
+<p>When you tap Connect, the App uses Android's built-in <code>VpnService</code> to open a tunnel and route the
+traffic of the apps you select (or all apps, if you don't use split tunneling) through the VPN server you
+picked in the server list. Android will show you its own "Connection request" system dialog every time a VPN
+tunnel starts — this is device-level protection, not something the App controls.</p>
+<p><strong>What we do:</strong> the App itself does not run its own traffic-inspection or logging code, does not
+read the content of your traffic, and does not build a browsing-history profile on our servers.</p>
+<p><strong>What we're honest about:</strong> the free-tier server locations bundled with the App are third-party
+relay servers that <strong>Thanh Mich LTD does not own or operate</strong>. Because we don't control that
+infrastructure, we cannot verify or guarantee the logging practices of those relay operators — any
+connection-level logs they keep (such as connection timestamps, source/destination IP, or data volume,
+which relay operators may retain for their own network operation, security, or abuse-prevention purposes)
+are outside our control. If a "no-logs" claim matters to you, we'd rather tell you this plainly than make a
+promise about servers we don't run. Premium server configurations bundled for paying subscribers are
+separate configuration files from the same App but are likewise provided by third-party server operators,
+not hosted by Thanh Mich LTD.</p>
+<p>We recommend avoiding the App for activity where you need an independently audited no-logs guarantee.</p>
+
+<h3>2.2 Check IP feature (ip-api.com)</h3>
+<p>The in-app "Check IP" screen sends your device's current public IP address to the third-party service
+<strong>ip-api.com</strong> to look up and display your IP address, approximate location, and internet service
+provider. This request is made directly from your device to ip-api.com; we do not store the result on any
+server we operate. See ip-api.com's own terms for how they handle this request.</p>
+
+<h3>2.3 Split tunneling ("App Using VPN")</h3>
+<p>To let you choose which installed apps route through the VPN, the App reads the list of apps installed on
+your device (Android <code>QUERY_ALL_PACKAGES</code> permission). This list is processed <strong>entirely on your
+device</strong> to build the toggle list you see — it is never transmitted to us or to any third party.</p>
+
+<h3>2.4 Usage and diagnostic data (Firebase)</h3>
+<p>We use <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong> (Google) to understand how the App
+is used and to diagnose crashes. This may include app interaction events, screens viewed, approximate
+device/app information, and crash logs/stack traces. We use <strong>Firebase Remote Config</strong> to adjust App
+behavior remotely; this is unrelated to your VPN traffic or connection history.</p>
+
+<h3>2.5 Advertising data (Google AdMob and mediation partners)</h3>
+<p>The App includes the Google Mobile Ads (AdMob) SDK and bundles the Adjust, Meta (Facebook) Audience
+Network, and TikTok Business SDKs for possible ad mediation. <strong>Ads are not yet configured in the current
+release build</strong> — the App's build process does not allow a release build to ship without setting this up
+first — but the SDKs and ad placements in the App are wired and may begin serving ads in a future update.
+When active, AdMob and its mediation partners may access your device's advertising identifier and related
+device/ad-interaction signals to serve and measure ads — including, on supported Android versions, through
+Android's Privacy Sandbox (Topics/Attribution) APIs — and, where applicable under your region's rules and
+consent choices, to personalize them. See Google's policies:
+<a href="https://policies.google.com/technologies/partner-sites">policies.google.com/technologies/partner-sites</a>.
+None of the mediation SDKs (Adjust, Meta, TikTok) is configured with an account token in this build, so none
+of them currently collects or reports data; we will update this policy before any of them is enabled.</p>
+
+<h3>2.6 Purchase data (Google Play Billing)</h3>
+<p>Veil VPN offers an optional premium subscription (weekly with a 3-day free trial, or monthly) and a
+one-time lifetime purchase that unlock premium server locations and remove ads. All purchases are processed
+entirely through <strong>Google Play Billing</strong>. Google Play handles your payment method and provides us only
+your purchase/entitlement status (which plan is active) so the App can unlock premium features for you. We
+never see or store your card details.</p>
+
+<h3>2.7 Information we do not collect</h3>
+<p>Veil VPN does not ask you to create an account or sign in, and does not collect your name, email address,
+phone number, or contact list. The App requests no camera, microphone, or photo-library access, and does not
+access your precise device location (the "location" shown on the Check IP screen is derived by the
+third-party ip-api.com service from your public IP address, not from your device's GPS).</p>
+
+<h2>3. How we use information</h2>
+<p>We use the information above to: establish and operate your VPN connection, run the Check-IP and split
+tunneling features, diagnose and fix crashes, understand aggregate usage to improve the App, process your
+premium purchase, and — once configured — show and measure ads.</p>
+
+<h2>4. Sharing of information</h2>
+<p>We do not sell your personal information. We share data only with the service providers and
+infrastructure operators that power the App's functionality:</p>
+<ul>
+<li><strong>Third-party VPN relay operators</strong> — your routed traffic passes through the server you select;
+  see Section 2.1 for what we do and do not control about this.</li>
+<li><strong>ip-api.com</strong> — receives your public IP to power the Check-IP screen.</li>
+<li><strong>Google</strong> (Firebase Analytics, Crashlytics, Remote Config) — usage analytics and crash
+  diagnostics.</li>
+<li><strong>Google AdMob</strong> and its mediation/ad-network partners — to serve and measure ads, once active.</li>
+<li><strong>Google Play</strong> — to process your subscription or lifetime purchase.</li>
+</ul>
+<p>We may also disclose information if required by law, or to protect the rights, property, or safety of
+Thanh Mich LTD, our users, or others.</p>
+
+<h2>5. Data retention</h2>
+<p>Your selected server, language, appearance choice, split-tunneling selections, and purchase status are
+stored locally on your device and are removed when you uninstall the App or clear its storage. Analytics,
+crash, advertising, and purchase data are retained by Google according to its own retention policies.
+Connection-level logs, if any, kept by third-party VPN relay operators are retained according to their own
+policies, which we do not control (see Section 2.1).</p>
+
+<h2>6. Children's privacy</h2>
+<p>The App is a general-audience privacy/VPN tool, not directed at children under 13 (or the equivalent
+minimum age in your jurisdiction), and we do not knowingly collect personal information from children. If
+you believe a child has provided us with personal information, contact us using the details in Section 8.</p>
+
+<h2>7. Your choices and rights</h2>
+<ul>
+<li><strong>Advertising ID</strong>: reset or opt out of interest-based advertising via Android Settings → Privacy →
+  Ads.</li>
+<li><strong>Split tunneling</strong>: choose exactly which apps route through the VPN, or turn split tunneling off,
+  from the App's "App Using VPN" screen.</li>
+<li><strong>Local data</strong>: uninstalling the App, or clearing its storage in Android Settings → Apps, removes
+  your locally stored preferences and purchase flag.</li>
+<li>Depending on where you live, you may have additional rights (e.g., under GDPR or CCPA/CPRA) to access,
+  correct, or delete your personal data, or object to certain processing. Contact us at the email in
+  Section 8 to exercise these rights.</li>
+</ul>
+
+<h2>8. Contact us</h2>
+<p>Questions about this Privacy Policy or your data: <strong>thanhmichltd@gmail.com</strong></p>
+
+<h2>9. Changes to this policy</h2>
+<p>We may update this Privacy Policy from time to time — for example before enabling ads in a release build,
+if we change VPN server providers, or if we add features. We will update the "Effective date" above when we
+do.</p>
+
+<footer>
+  Veil VPN is developed by Thanh Mich LTD. Contact: <a href="mailto:thanhmichltd@gmail.com">thanhmichltd@gmail.com</a>
+</footer>
+</main>
+</body>
+</html>
